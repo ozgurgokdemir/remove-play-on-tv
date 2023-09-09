@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Play on TV from YouTube",
+  "version": "0.0.1",
+  "description": "Removes the Play on TV button on YouTube videos.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "author": {
+    "name": "Özgür Gökdemir",
+    "email": "ozgurgokd@gmail.com",
+    "url": "https://ozgurgokdemir.com"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?*"],
+      "js": ["index.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
