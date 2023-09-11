@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "description": "Removes the Play on TV button on YouTube videos.",
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "public/icon16.png",
+    "48": "public/icon48.png",
+    "128": "public/icon128.png"
   },
   "author": {
     "name": "Özgür Gökdemir",
@@ -15,9 +15,9 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/watch?*"],
+      "matches": ["https://www.youtube.com/*"],
       "js": ["index.js"],
-      "run_at": "document_end"
+      "run_at": "document_start"
     }
   ]
 }
